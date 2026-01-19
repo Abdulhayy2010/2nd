@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Website</title>
+    <style>
+        body,html{
+            background-color: #F0F0F0;
+            font-family: sans-serif;
+            scroll-behavior: smooth;
+        }
+        header{
+            background-color: #2636E4;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgb(0,0,0,0.3);
+            transition: animation 0.6s, transform 0.6s;
+        }
+        header:hover{
+            transform: translateY(-5px);
+        }
+        nav{
+            color: white;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 10px;
+        }
+        main{
+           background-color: #F0F0F0;
+           padding: 10px;
+           margin: 20px;
+        }
+        .about{
+            background-color: #F0F0F0;
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.3);
+            padding: 50px;
+            border-radius: 15px;
+            padding: 40px;
+            margin: auto;
+            transition: all 0.5s ease-in-out;
+            border:  #2636E4 2px solid;
+        }
+        .about p{
+            color:  #2636E4;
+            text-align: center;
+            margin: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            
+        }
+        img{
+            border-radius: 20px;
+            border: 3px  #000000 solid;
+            margin: auto;
+            transition: all 0.3s ease-in-out;
+            
+        }
+        img:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            border: 3px #2636E4 solid;
+        }
+        .about h2{
+            color:  #2636E4;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        .about:hover{
+            transform: translateY(-25px);
+            box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
+        }
+        .skills{
+            background-color: #2636E4;
+            padding: 50px;
+            border-radius: 15px;
+            padding: 40px;
+            margin: auto;
+            transition: all 0.5s ease-in-out;
+            border:  #05060F 3px solid;
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.3);
+        }
+        .skills h2,h3{
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .skills ul{
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            
+        }
+        .skills table{
+            color: black;
+            
+        }
+        .contact{
+            background-color: #F0F0F0;
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.3);
+            padding: 50px;
+            border-radius: 15px;
+            padding: 40px;
+            margin: auto;
+            transition: all 0.5s ease-in-out;
+            border:  #2636E4 2px solid;
+        }
+        .skills:hover{
+            transform: translateY(-5px);
+            border: 3px solid #2636E4;
+            background-color: white;
+            box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
+        }
+        div{
+            background-color: red;
+            display: flex;
+            padding: 20px;
+            margin: 10px;
+            
+        }
+        .modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.modern-table th {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  text-align: left;
+}
+
+.modern-table td {
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.modern-table tr:hover {
+  background: #f1f5ff;
+  transition: 0.3s;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Abdulhayy codespace</h1>
+    <nav>
+        
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#contact">Contact</a>
+        
+    </nav>
+</header>
+
+
+<main>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <img src="me1.png" alt="My photo" width="200">
+    <p>
+        I am learning <strong>WEB DEVELOPMENT</strong> <br>and building my skills
+        step by step.
+    </p>
+</section>
+
+<hr>
+
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS (Learning)</li>
+        <li>JavaScript (Learning)</li>
+    </ul>
+
+    <h3>Learning Progress</h3>
+
+    <table border="1" class="modern-table">
+        <tr>
+            <th>Technology</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Starting</td>
+        </tr>
+        <tr>
+            <td>JAVASCRIPT</td>
+            <td>Good</td>
+        </tr>
+    </table>
+</section>
+
+<hr>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+        <textarea placeholder="Your Message"></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+<hr>
+<section class="div">
+    <div>
+        <h3> HTML</h3>
+    
+        <h3>CSS</h3>
+    
+        <h3>JAVASCRIPT</h3>
+    </div>
+</section>
+</main>
+<hr>
+<footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+</footer>
+</body>
